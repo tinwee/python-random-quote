@@ -9,9 +9,14 @@ def primary():
 
 #  last = 13
   last = len(quotes) - 1
-  rnd = random.randint(0, last)
+
+#  for n in (0,1):
+  for n in range(10):
+#  for n in ['First', 'Second', 'Third']:
+    rnd = random.randint(0, last)
 #  print(quotes[13])
-  print(quotes[rnd])
+    print(n, last, rnd)
+    print(quotes[rnd].strip())
 
 if __name__== "__main__":
   primary()
